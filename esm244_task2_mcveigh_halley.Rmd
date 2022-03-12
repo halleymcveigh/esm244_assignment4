@@ -1,0 +1,52 @@
+---
+title: 'An exploration and time series summary of Willamette Falls fish passage'
+author: "Halley McVeigh"
+date: "3/7/2022"
+output:
+  html_document:
+    code_folding: hide
+    theme: cosmo
+  
+---
+
+```{r setup, include=TRUE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(prettydoc)
+library(here)
+library(tidyverse)
+```
+
+```{r}
+fish_passage <- read_csv(here("data", "willamette_fish_passage.csv"))
+```
+
+
+
+### **Overview**
+
+
+
+**Summary:**
+
+### Data citation:
+adult fish passage recorded from 2001-01-01 to 2010-12-31 at the Willamette Falls fish ladder on the Willamette River (Oregon). Data were shared by and accessed from Columbia River DART (Data Access in Real Time).
+
+
+
+## Data Analysis {.tabset}
+
+
+### Original time series
+
+(tab content)
+
+### Seasonplots
+
+
+(tab content)
+
+### Annual counts
+
+
+
